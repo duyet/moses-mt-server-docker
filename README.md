@@ -1,5 +1,6 @@
 [Moses](https://github.com/moses-smt/mosesdecoder) comes with an [XMLPRC enabled server](https://github.com/moses-smt/mosesdecoder/tree/master/contrib/server) which is great for producting translations but does not handle pre- and postprocessing. This server calls all the scripts and wraps mosesserver to provide an interface similar to the [Google Translate API](https://developers.google.com/translate/).
 
+Fork from: https://github.com/casmacat/moses-mt-server
 
 How to use:
 -----------
@@ -9,6 +10,7 @@ How to use:
 ```bash
 /path/mosesserver -f modelpath/moses.ini
 ```
+Or using Docker: [https://github.com/duyetdev/mosesserver-docker](https://github.com/duyetdev/mosesserver-docker)
 
 2. Start python server:
 
@@ -103,7 +105,7 @@ Requirements:
 Caveats:
 --------
 
-Be consistent with pre- and post processing steps for training and using the MT system. This server assumes the folloing order:
+Be consistent with pre- and post processing steps for training and using the MT system. This server assumes the following order:
 
 1. tokenization
 2. truecasing (or lowercasing)
